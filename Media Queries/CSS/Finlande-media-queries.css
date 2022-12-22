@@ -1,0 +1,453 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------------------------------- */
+/*      Barre de Navigation Couleurs        */
+/* ---------------------------------------- */
+
+:root {
+    --first-color-nav: #FACEB5;
+    --second-color-nav: #1b1b1b;
+    --hover-color-nav: #1e1e1e;
+    --text-color-nav: #e6e6e6;
+}
+  
+.nav-btn {
+    color: var(--first-color-nav);
+}
+  
+.sidebar {
+    background: var(--second-color-nav);
+}
+  
+.sidebar p {
+    color: var(--text-color-nav);
+    background: var(--hover-color-nav);
+}
+  
+nav ul {
+    background: var(--second-color-nav);
+}
+  
+nav ul li a {
+    color: var(--text-color-nav);
+}
+  
+nav ul li a:hover {
+    color: var(--first-color-nav);
+    background: var(--hover-color-nav);
+    border-bottom-color: var(--first-color-nav);
+}
+
+nav ul ul li a {
+    color: var(--text-color-nav);
+}
+
+/* ---------------------------------------- */
+/*                   En-tête                */
+/* ---------------------------------------- */
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.clip-path-title {
+    width: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 4px;
+    background-image: url("../Images/Finlande/background-entete.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.clip-path-title h1 {
+    color: white;
+}
+
+/* ---------------------------------------- */
+/*  Première section : Description Finlande */
+/* ---------------------------------------- */
+
+.description-trip {
+    margin: 120px 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #fff;
+}
+
+
+.description-trip article {
+    /* margin-right: 40px; */
+    width: 100%;
+    padding : 0% 0%;
+    text-align: justify;
+}
+
+.description-trip-pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    padding: 0% 5%;
+    border-radius: 5px;
+}
+
+.description-trip-pictures-top {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description-trip-pictures-top img {
+    width: 49%;
+}
+
+
+/* ---------------------------------------- */
+/*      Deuxième section : Bon à savoir     */
+/* ---------------------------------------- */
+
+.good-to-know {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    width: 97%;
+}
+
+.good-to-know-title {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.good-to-know-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.good-to-know-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-aroun; */
+    width: 12%;
+    height : 200px;
+    text-align: center;
+    margin: 0% 4%;
+}
+
+.good-to-know-information figcaption {
+    font-size: 0.5em;
+}
+
+.good-to-know-information img {
+    width: 95%;
+}
+
+
+
+/* ---------------------------------------- */
+/*  Troisième section : Endroits à visiter  */
+/* ---------------------------------------- */
+
+.places-to-see {
+    margin: 150px 0px;
+    padding: 0 10%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.places-to-see-grid-pictures {
+    display: none;
+}
+
+.grid-vertical {
+    display: none;
+}
+
+.grid-horizontal {
+    display: none;
+}
+
+.grid-center {
+    display: none;
+}
+
+.places-to-see-list {
+    margin-top: -80px;
+    margin-right: 70px;
+    width: 90%;
+}
+
+.places-to-see-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+/* ---------------------------------------- */
+/*       Quatrième section : Rovaniemi      */
+/* ---------------------------------------- */
+
+.rovaniemi {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../Images/Finlande/reindeer1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.rovaniemi-text {
+    margin: 40px 20px 40px 20px;
+    padding: 0 0px 10px 30px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.rovaniemi-text p {
+    font-size: 0.8em;
+}
+
+.rovaniemi-text h2 {
+    color: whitesmoke;
+}
+
+/* ---------------------------------------- */
+/*       Cinquième section :  Helsinki      */
+/* ---------------------------------------- */
+
+.helsinki {
+    margin: 200px 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+    background-color: #fff;
+}
+
+.helsinki article {
+    width: 95%;
+    text-align: justify;
+}
+
+.helsinki img {
+    width: 95%;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+
+/* ---------------------------------------- */
+/*      Sixième section :  Spécialités      */
+/* ---------------------------------------- */
+
+.food {
+    margin: 50px 0 300px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+
+.food-all h4{
+    font-size: 1.3em;
+}
+
+.food-title {
+    text-align: center;
+    margin : 100px 0 0px 0;
+}
+
+.food img {
+    margin: 0px 2%;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: -10px 10px 15px 3px rgb(180, 174, 174);
+}
+
+.food-all {
+    display: flex;
+    flex-direction: row;
+    margin : 0 0px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height : 400px;
+    text-align: justify;
+}
+
+.food-hidden {
+    z-index: 1;
+    width: 50%;
+    padding : 2%;
+}
+
+.food-hidden p {
+    font-size:0.8em;
+
+}
+
+
+/* ---------------------------------------- */
+/*      Septième section :  Autres pays     */
+/* ---------------------------------------- */
+
+.blog-us {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #fff;
+}
+
+.blog-us-tab {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.blog-us-tab article {
+    margin: 0 15px;
+    width: 90%;
+    height: 350px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.blog-us-tab img {
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.blog-us-tab article:hover {
+    box-shadow: 0px 0px 50px rgba(100, 100, 100, .6);
+    transition: .5s;
+}
+
+/* ---------------------------------------- */
+/*                 Footer                   */
+/* ---------------------------------------- */
+
+.contact { 
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-image: url(../Images/Finlande/porvoo-finland.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 150px 0px 0px 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+} 
+
+.contact-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.contact-title {
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-top: 60px;
+    padding: 0px 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-nom-prenom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type=nom-prenom] {
+    width: 30%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 10%;
+    backdrop-filter: blur(3px);
+    font-family: Raleway;
+}
+
+input[type=text]  {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 10%;
+    backdrop-filter: blur(3px);
+    font-family: Raleway;
+}
+
+textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 10%;
+    margin-bottom: 16px;
+    backdrop-filter: blur(3px);
+    font-family: Raleway;
+}
+  
+input[type=submit] {
+    background-color: #8B827D;
+    backdrop-filter: blur(3px);
+    color: #F6F5F1;
+    font-family: Raleway;
+    margin: 40px 100px 40px 100px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+::placeholder {
+    color: #000;
+}
